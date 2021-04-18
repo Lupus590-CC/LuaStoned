@@ -7,4 +7,5 @@
 -- luastoned updateCheck [packageName] -- if packageName is nil then all packages will be updated
 -- luastoned list [mask]
 -- luastoned listInstalled [mask]
--- luastoned addRepo <url>
+-- luastoned addRepo <name> <url/file> -- add one repo to the list
+-- luastoned importRepoList <url/file> -- import a list of repos and merge it with the local list

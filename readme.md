@@ -7,8 +7,6 @@ Taking inspiration from [Lyqyd's Packman](https://github.com/lyqyd/cc-packman).
 `wget run https://raw.githubusercontent.com/Lupus590-CC/LuaStoned/master/bootstrap.lua`
 and then follow the on screen instuctions
 
-TODO: Lyqyd's packman support?
-
 # Example stone file
 ```lua
 return {
@@ -18,11 +16,13 @@ return {
             "url",
             "url"
         },
+        mainFile = "", -- only required in multi file stones
         name = "example program",
         summary = "",
         description = "",
         license = "MIT",
-        type = "module" or "program" or "api", -- tells luastoned where to install things
+        -- TODO: API support?
+        type = "module" or "program", -- tells luastoned where to install things
         -- TODO: how should the install/etc functions work?
         -- warn if there is a func?
         preInstallFunc = function() end or nil,
@@ -55,3 +55,11 @@ return {
 ```
 
 You might have notice that we make no effort to hide that we are actually using lua files to store these. I'm a lazy human and don't want to make a custom format parser.
+
+# Large TODOs
+TODO: Lyqyd's packman support?
+TODO: SquidDev's blue shiny rocks support?
+TODO: missing CC builtin files?
+TODO: how to handle unused dependencies?
+TODO: how to handle dependencies changing on update?
+TODO: file metadata for what files belong to which installed programs and which were created but which program? kinda like https://www.computercraft.info/forums2/index.php?/topic/18646-rfc-metadata-file-structure-compatible-with-all-file-types/

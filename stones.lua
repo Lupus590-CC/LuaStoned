@@ -3,6 +3,7 @@ return {
         files = {
             "url",
         },
+        mainFile = "", -- only required in multi file stones
         name = "Lua Stoned",
         summary = "A play on LuaRocks. And a package manager for CC:T.",
         description = "",
@@ -21,7 +22,7 @@ return {
             "url",
             "url"
         },
-        version = "1.0.0",
+        version = "0.0.1",
     },
 
     wrapper = {
@@ -41,6 +42,6 @@ return {
         requireCcBuiltins = {
 
         },
-        version = "1.0.0",
+        version = "0.0.1",
     }
 }

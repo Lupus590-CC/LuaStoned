@@ -1,0 +1,2 @@
+-- generated wrapper program
+-- https://github.com/Lupus590-CC/LuaStoned/blob/master/shim_template.lua
