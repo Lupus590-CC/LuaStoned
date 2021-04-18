@@ -1,0 +1,1 @@
+-- just a merged version of https://github.com/Lupus590-CC/LuaStoned/blob/master/repo_list.lua and others

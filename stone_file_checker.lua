@@ -1,0 +1,1 @@
+-- TODO: write stone file checker

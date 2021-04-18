@@ -1,0 +1,1 @@
+-- https://github.com/Lupus590-CC/LuaStoned/blob/master/startup.lua
