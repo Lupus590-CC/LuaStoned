@@ -11,3 +11,8 @@
 
 -- TODO: write the startup file
 -- https://github.com/Lupus590-CC/LuaStoned/blob/54d59f02491aaf5e3ed5556518ec3f447aeb9b61/startup.lua
+
+-- http.request(url)
+-- os.pullEvent()
+    -- "http_success", url, {close, readAll}
+    -- "http_failure", url, errorMessage, {close, readAll}
