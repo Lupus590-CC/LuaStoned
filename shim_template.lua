@@ -1,12 +1,12 @@
 
 local makePackage = require("cc.require").make
 
-
+-- TODO: use string.format and placeholders
 local programToLoad = shell.getRunningProgram():gsub("^.luastoned/shims/", "")
 
 
 
-
+-- TODO: can a lot of this be put into a module to save disk space?
 -- set up the env
 local clientEnv = setmetatable({
 	multishell = multishell,
@@ -50,7 +50,7 @@ if fnFile then
 	local ok, err = pcall(fnFile, table.unpack(arg))
 	if not ok then
 		if err and err ~= "" then
-			printError(err)
+			printError(err) -- how does this work for theres calliong shell.cun on us?
 		end
 		return false
 	end

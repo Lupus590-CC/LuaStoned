@@ -13,6 +13,7 @@ return {
      -- example
      stoneName = { -- the unique name of the stone, these must be unique per repo but can have two with the same name so long as they are in different repos
         files = { -- all of these will be downloaded and saved into correct folder (determined by the type)
+        -- TODO: how to allow things to define sub folders?
             "url",
             "url"
         },
