@@ -16,7 +16,7 @@ local clientEnv = setmetatable({
 })
 
 clientEnv.require, clientEnv.package = makePackage(clientEnv, actualProgramDir)
-clientEnv.package.loaders[#package.loaders + 1] = function(name)
+clientEnv.package.loaders[#package.loaders + 1] = function(name) -- If we didn't want to support multiple versions of the same module then we could modify package.path
 	-- TODO: implement
 	-- go through the dependencies of this program and load them as required
 end
