@@ -4,7 +4,7 @@ return {
             "https://raw.githubusercontent.com/Lupus590-CC/LuaStoned/master/luastoned.lua",
             "https://raw.githubusercontent.com/Lupus590-CC/LuaStoned/master/shim_template.lua",
         },
-        mainFile = "luastoned", -- only required in multi file stones
+        mainFile = "luastoned.lua", -- only required in multi file stones
         name = "Lua Stoned",
         summary = "A play on LuaRocks. And a package manager for CC:T.",
         description = "",
