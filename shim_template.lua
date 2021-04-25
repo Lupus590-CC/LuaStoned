@@ -8,6 +8,7 @@ local programToLoad = shell.getRunningProgram():gsub("^.luastoned/shims/", "")
 
 -- TODO: can a lot of this be put into a module to save disk space?
 -- set up the env
+-- TODO: do we need to do some env sanitation?
 local clientEnv = setmetatable({
 	multishell = multishell,
 	shell = shell,
